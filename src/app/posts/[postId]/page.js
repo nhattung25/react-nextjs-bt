@@ -25,7 +25,7 @@ export default async function Posts() {
 
       <h2>Comments</h2>
       {commentData.comments.map((item) => (
-        <article>
+        <article key={item.id}>
           <h4>{item.user.username}</h4>
           {item.body}
         </article>
