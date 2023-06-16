@@ -1,4 +1,4 @@
-import Counter from "@/components/Counter";
+import Counter from "@/app/_components/Counter";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export default async function Home() {
   const data = await getProduct({ page: 1 });
 
   return (
-    <main>
+    <main className="home">
       {data.products.map((product) => (
         <article key={product.id}>
           <Link href={`/products/${product.id}`}>

@@ -4,8 +4,16 @@ export const getPost = async ({ page }) => {
   return json;
 };
 
-export const getComment = async () => {
-  const res = await fetch("https://dummyjson.com/posts/1/comments");
+export const getPostById = async ({ postId }) => {
+  const res = await fetch(`https://dummyjson.com/posts/${postId}`);
   const json = await res.json();
+
+  return json;
+};
+
+export const getPostComments = async ({ postId }) => {
+  const res = await fetch(`https://dummyjson.com/posts/${postId}/comments`);
+  const json = await res.json();
+
   return json;
 };

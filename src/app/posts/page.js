@@ -1,14 +1,13 @@
-import { getComment, getPost } from "@/services/post.service";
+import { getPost } from "@/services/post.service";
 import Link from "next/link";
 
 export default async function Posts() {
   const data = await getPost({ page: 1 });
-  const commentData = await getComment();
 
   return (
     <main>
       {data.posts.map((post) => (
-        <article key={post.id}>
+        <article key={post.id} className="post-item">
           <Link href={`/posts/${post.id}`}>
             <div className="post-title">
               <h2>{post.title}</h2>
@@ -24,11 +23,6 @@ export default async function Posts() {
           </div>
         </article>
       ))}
-
-      <h2>Comments</h2>
-      {commentData.comments.map((item) => {
-        <h4>{item.user.username}</h4>;
-      })}
     </main>
   );
 }

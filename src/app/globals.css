@@ -54,20 +54,58 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-main {
+.home {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
 }
-.product-info {
+*/ .product-info {
   padding: 10px;
   margin-bottom: 20px;
 }
 .product-name {
   padding: 10px;
 }
-a{
+a {
   text-decoration: none;
+}
+
+.detail-content {
+  display: flex;
+}
+.slide {
+  display: flex;
+  width: 700px;
+  height: 255px;
+  margin-top: 80px;
+}
+
+.post-item {
+  background: linear-gradient(90deg, #dd5e89, #f7bb97);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.post-reaction {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.post-title {
+  color: white;
+}
+
+.comment-item {
+  background: linear-gradient(90deg, #dd5e89, #f7bb97);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
