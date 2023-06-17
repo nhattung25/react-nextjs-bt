@@ -7,8 +7,8 @@ export default async function Comments({ params: { postId } }) {
     <main>
       <h2>Comments</h2>
 
-      <article key={commentsData.id}>
-        {commentsData.comments.map((comment) => (
+      {commentsData.comments.map((comment) => (
+        <article key={commentsData.id}>
           <div className="comment-item">
             <div className="user">
               <span>User:</span>
@@ -16,8 +16,8 @@ export default async function Comments({ params: { postId } }) {
             </div>
             <p>{comment.body}</p>
           </div>
-        ))}
-      </article>
+        </article>
+      ))}
     </main>
   );
 }

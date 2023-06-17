@@ -16,15 +16,6 @@
   }
 } */
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
 header {
   margin-bottom: 20px;
   background: linear-gradient(90deg, #dd5e89, #f7bb97);
@@ -61,7 +52,7 @@ header {
   margin-left: 20px;
   margin-right: 20px;
 }
-*/ .product-info {
+.product-info {
   padding: 10px;
   margin-bottom: 20px;
 }
