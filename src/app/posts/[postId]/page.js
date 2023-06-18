@@ -1,4 +1,4 @@
-import { getPostById, getPostComments } from "@/services/post.service";
+import {  getPostComments } from "@/services/post.service";
 
 export default async function Comments({ params: { postId } }) {
   const commentsData = await getPostComments({ postId });
